@@ -19,19 +19,18 @@
     [super viewDidLoad];
     //初始化layout
     LinerFlowLayout *layout = [[LinerFlowLayout alloc] init];
-    [layout setScrollDirection:UICollectionViewScrollDirectionHorizontal];
-    layout.itemSize = CGSizeMake(100, 100);
-    layout.minimumLineSpacing = 10;
-    layout.minimumInteritemSpacing = 10;
+    layout.itemSize = CGSizeMake(160, 160);
+//    layout.minimumLineSpacing = 10;
+//    layout.minimumInteritemSpacing = 10;
     
     
     //初始化collectionView
     CGFloat collectionViewW = self.view.frame.size.width;
-    CGFloat collectionViewH = 160;
+    CGFloat collectionViewH = 200;
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, collectionViewW, collectionViewH) collectionViewLayout:layout];
     collectionView.backgroundColor = [UIColor redColor];
     collectionView.dataSource = self;
-    collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
+//    collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
 
     //添加collecView到控制器上
     [self.view addSubview:collectionView];
@@ -42,7 +41,6 @@
 #pragma mark - UICollectionViewDataSource 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-
     return 50;
 }
 
@@ -53,6 +51,18 @@
     cell.backgroundColor = [UIColor blueColor];
     
 //    NSLog(@"%p,%zd",cell,indexPath.row);
+    
+    NSInteger tag = 10;
+    UILabel *label = (UILabel *)[cell.contentView viewWithTag:tag];
+    
+    if (label == nil) {
+        label = [[UILabel alloc] init];
+        label.tag = tag;
+        [cell.contentView addSubview:label];
+        label.backgroundColor = [UIColor purpleColor];
+    }
+    label.text = [NSString stringWithFormat:@"no %zd item",indexPath.item];
+    [label sizeToFit];
     return cell;
 }
 @end
