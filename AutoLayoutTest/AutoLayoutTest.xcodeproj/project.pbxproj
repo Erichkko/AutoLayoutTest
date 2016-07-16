@@ -13,6 +13,7 @@
 		FE9BFEA01D3A5F5D006D0486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFE9E1D3A5F5D006D0486 /* Main.storyboard */; };
 		FE9BFEA21D3A5F5D006D0486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFEA11D3A5F5D006D0486 /* Assets.xcassets */; };
 		FE9BFEA51D3A5F5D006D0486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFEA31D3A5F5D006D0486 /* LaunchScreen.storyboard */; };
+		FE9BFEAE1D3A6D0A006D0486 /* LinerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FE9BFEA11D3A5F5D006D0486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE9BFEA41D3A5F5D006D0486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE9BFEA61D3A5F5D006D0486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE9BFEAC1D3A6D0A006D0486 /* LinerFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinerFlowLayout.h; sourceTree = "<group>"; };
+		FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinerFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				FE9BFEA31D3A5F5D006D0486 /* LaunchScreen.storyboard */,
 				FE9BFEA61D3A5F5D006D0486 /* Info.plist */,
 				FE9BFE951D3A5F5D006D0486 /* Supporting Files */,
+				FE9BFEAC1D3A6D0A006D0486 /* LinerFlowLayout.h */,
+				FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */,
 			);
 			path = AutoLayoutTest;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE9BFEAE1D3A6D0A006D0486 /* LinerFlowLayout.m in Sources */,
 				FE9BFE9D1D3A5F5D006D0486 /* ViewController.m in Sources */,
 				FE9BFE9A1D3A5F5D006D0486 /* AppDelegate.m in Sources */,
 				FE9BFE971D3A5F5D006D0486 /* main.m in Sources */,
