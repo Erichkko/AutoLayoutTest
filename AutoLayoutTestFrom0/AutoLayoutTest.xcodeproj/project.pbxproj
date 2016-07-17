@@ -13,7 +13,6 @@
 		FE9BFEA01D3A5F5D006D0486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFE9E1D3A5F5D006D0486 /* Main.storyboard */; };
 		FE9BFEA21D3A5F5D006D0486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFEA11D3A5F5D006D0486 /* Assets.xcassets */; };
 		FE9BFEA51D3A5F5D006D0486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE9BFEA31D3A5F5D006D0486 /* LaunchScreen.storyboard */; };
-		FE9BFEAE1D3A6D0A006D0486 /* LinerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */; };
 		FEAE7CC61D3B507400BF0A37 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */; };
 		FEAE7CC81D3B562800BF0A37 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -29,8 +28,6 @@
 		FE9BFEA11D3A5F5D006D0486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE9BFEA41D3A5F5D006D0486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE9BFEA61D3A5F5D006D0486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE9BFEAC1D3A6D0A006D0486 /* LinerFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinerFlowLayout.h; sourceTree = "<group>"; };
-		FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinerFlowLayout.m; sourceTree = "<group>"; };
 		FEAE7CC41D3B507400BF0A37 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -75,8 +72,6 @@
 				FE9BFEA31D3A5F5D006D0486 /* LaunchScreen.storyboard */,
 				FE9BFEA61D3A5F5D006D0486 /* Info.plist */,
 				FE9BFE951D3A5F5D006D0486 /* Supporting Files */,
-				FE9BFEAC1D3A6D0A006D0486 /* LinerFlowLayout.h */,
-				FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */,
 				FEAE7CC41D3B507400BF0A37 /* PhotoCollectionViewCell.h */,
 				FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */,
 				FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */,
@@ -164,7 +159,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE9BFEAE1D3A6D0A006D0486 /* LinerFlowLayout.m in Sources */,
 				FE9BFE9D1D3A5F5D006D0486 /* ViewController.m in Sources */,
 				FE9BFE9A1D3A5F5D006D0486 /* AppDelegate.m in Sources */,
 				FEAE7CC61D3B507400BF0A37 /* PhotoCollectionViewCell.m in Sources */,
@@ -280,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.AutoLayoutTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.AutoLayoutTestFrom0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -291,7 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutoLayoutTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.AutoLayoutTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mineline.AutoLayoutTestFrom0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
