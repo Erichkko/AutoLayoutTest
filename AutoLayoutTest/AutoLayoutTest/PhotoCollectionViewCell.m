@@ -33,7 +33,7 @@
 
 - (void)awakeFromNib
 {
-    self.pictureImageView.layer.borderWidth = 5;
+    self.pictureImageView.layer.borderWidth = 0;
     self.pictureImageView.layer.borderColor = [[UIColor redColor] CGColor];
 }
 - (void)setup
@@ -49,4 +49,6 @@
     _imgaeName = imgaeName;
     self.pictureImageView.image = [UIImage imageNamed:imgaeName];
 }
+
+
 @end

@@ -16,6 +16,7 @@
 		FE9BFEAE1D3A6D0A006D0486 /* LinerFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */; };
 		FEAE7CC61D3B507400BF0A37 /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */; };
 		FEAE7CC81D3B562800BF0A37 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */; };
+		FEAE7CCE1D3B73A500BF0A37 /* CircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAE7CCD1D3B73A500BF0A37 /* CircleLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,8 @@
 		FEAE7CC41D3B507400BF0A37 /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
 		FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
 		FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		FEAE7CCC1D3B73A500BF0A37 /* CircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleLayout.h; path = ../CircleLayout.h; sourceTree = "<group>"; };
+		FEAE7CCD1D3B73A500BF0A37 /* CircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleLayout.m; path = ../CircleLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 				FE9BFE951D3A5F5D006D0486 /* Supporting Files */,
 				FE9BFEAC1D3A6D0A006D0486 /* LinerFlowLayout.h */,
 				FE9BFEAD1D3A6D0A006D0486 /* LinerFlowLayout.m */,
+				FEAE7CCC1D3B73A500BF0A37 /* CircleLayout.h */,
+				FEAE7CCD1D3B73A500BF0A37 /* CircleLayout.m */,
 				FEAE7CC41D3B507400BF0A37 /* PhotoCollectionViewCell.h */,
 				FEAE7CC51D3B507400BF0A37 /* PhotoCollectionViewCell.m */,
 				FEAE7CC71D3B562800BF0A37 /* PhotoCollectionViewCell.xib */,
@@ -169,6 +174,7 @@
 				FE9BFE9A1D3A5F5D006D0486 /* AppDelegate.m in Sources */,
 				FEAE7CC61D3B507400BF0A37 /* PhotoCollectionViewCell.m in Sources */,
 				FE9BFE971D3A5F5D006D0486 /* main.m in Sources */,
+				FEAE7CCE1D3B73A500BF0A37 /* CircleLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
