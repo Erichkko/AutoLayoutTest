@@ -1,13 +1,13 @@
 //
-//  LinerFlowLayout.h
+//  GridLayout.h
 //  AutoLayoutTest
 //
-//  Created by wanglong on 16/7/16.
+//  Created by wanglong on 16/7/17.
 //  Copyright © 2016年 wanglong. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LinerFlowLayout : UICollectionViewFlowLayout
+@interface GridLayout : UICollectionViewLayout
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "LinerFlowLayout.h"
+
+#import "GridLayout.h"
 #import "PhotoCollectionViewCell.h"
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
@@ -19,8 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始化layout
-    LinerFlowLayout *layout = [[LinerFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(160, 160);
+    GridLayout *layout = [[GridLayout alloc] init];
+//    layout.itemSize = CGSizeMake(160, 160);
 //    layout.minimumLineSpacing = 10;
 //    layout.minimumInteritemSpacing = 10;
     
