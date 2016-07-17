@@ -82,7 +82,7 @@
     
     return proposedContentOffset;
 }
-
+//用来做布局的初始化工作 不建议放在init方法中，因为 布局尺寸 可能为o
 - (void)prepareLayout
 {
     [super prepareLayout];

@@ -8,13 +8,14 @@
 
 #import "ViewController.h"
 #import "LinerFlowLayout.h"
+#import "PhotoCollectionViewCell.h"
 
-@interface ViewController ()<UICollectionViewDataSource>
+@interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @end
 
 @implementation ViewController
-
+    static NSString * const photoCellID = @"photoCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     //初始化layout
@@ -28,41 +29,52 @@
     CGFloat collectionViewW = self.view.frame.size.width;
     CGFloat collectionViewH = 200;
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, collectionViewW, collectionViewH) collectionViewLayout:layout];
-    collectionView.backgroundColor = [UIColor redColor];
+//    collectionView.backgroundColor = [UIColor redColor];
     collectionView.dataSource = self;
+    collectionView.delegate = self;
 //    collectionView.contentInset = UIEdgeInsetsMake(10, 10, 10, 10);
 
     //添加collecView到控制器上
     [self.view addSubview:collectionView];
-    
-    [collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
+//    
+//    [collectionView registerClass:[PhotoCollectionViewCell class] forCellWithReuseIdentifier:photoCellID];
+     UINib *nib = [UINib nibWithNibName:NSStringFromClass([PhotoCollectionViewCell class]) bundle:nil];
+    [collectionView registerNib:nib forCellWithReuseIdentifier:photoCellID];
     
 }
 #pragma mark - UICollectionViewDataSource 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 50;
+    return 20;
 }
 
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+
+    PhotoCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:photoCellID forIndexPath:indexPath];
     cell.backgroundColor = [UIColor blueColor];
+    cell.imgaeName = [NSString stringWithFormat:@"%zd",indexPath.item +1];
     
 //    NSLog(@"%p,%zd",cell,indexPath.row);
     
-    NSInteger tag = 10;
-    UILabel *label = (UILabel *)[cell.contentView viewWithTag:tag];
-    
-    if (label == nil) {
-        label = [[UILabel alloc] init];
-        label.tag = tag;
-        [cell.contentView addSubview:label];
-        label.backgroundColor = [UIColor purpleColor];
-    }
-    label.text = [NSString stringWithFormat:@"no %zd item",indexPath.item];
-    [label sizeToFit];
+//    NSInteger tag = 10;
+//    UILabel *label = (UILabel *)[cell.contentView viewWithTag:tag];
+//    
+//    if (label == nil) {
+//        label = [[UILabel alloc] init];
+//        label.tag = tag;
+//        [cell.contentView addSubview:label];
+//        label.backgroundColor = [UIColor purpleColor];
+//    }
+//    label.text = [NSString stringWithFormat:@"no %zd item",indexPath.item];
+//    [label sizeToFit];
     return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"click == %zd",indexPath.item);
 }
 @end
