@@ -27,9 +27,9 @@
     
     
     //初始化collectionView
-    CGFloat collectionViewW = self.view.frame.size.width;
-    CGFloat collectionViewH = 200;
-    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 100, collectionViewW, collectionViewH) collectionViewLayout:layout];
+//    CGFloat collectionViewW = self.view.frame.size.width;
+//    CGFloat collectionViewH = 200;
+    UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
 //    collectionView.backgroundColor = [UIColor redColor];
     collectionView.dataSource = self;
     collectionView.delegate = self;
@@ -77,5 +77,10 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"click == %zd",indexPath.item);
+}
+
+- (UIStatusBarStyle )preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 @end
